@@ -1,5 +1,5 @@
 ---
-title: "Final Project"
+title: "EPI590R Final Project"
 author: "Ernest Koh"
 format:
   html:

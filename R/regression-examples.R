@@ -134,3 +134,16 @@ tbl_eyes_poisson <- tbl_regression(eyes_poisson,
 tbl_merge(list(tbl_eyes_binomial,tbl_eyes_poisson),
 					tab_spanner = c("**binomial**","**poisson**"))
 
+emo::ji("banana")
+emo::ji("eggplant")
+emo::ji("man")
+emo::ji("ship")
+
+install.packages("lchiffon/wordcloud2")
+
+library(wordcloud2)
+wordcloud2(data = ,nlsy$glasses_cat)
+
+renv::snapshot()
+
+renv::init()
