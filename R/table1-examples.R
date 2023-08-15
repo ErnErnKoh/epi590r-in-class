@@ -61,8 +61,6 @@ tbl_summary(
 
 #exercise
 
-
-
 tbl_summary(
 	nlsy,
 	by = sex_cat,
@@ -88,6 +86,8 @@ tbl_summary(
 		rows = label == "Race/ethnicity",
 		footnote = "see XXXXX"
 	)
+
+# Regression
 
 
 
