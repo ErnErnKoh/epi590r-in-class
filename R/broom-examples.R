@@ -1,4 +1,5 @@
 install.packages("broom")
+install.packages("prettydoc")
 
 library(tidyverse)
 library(broom)

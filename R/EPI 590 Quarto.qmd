@@ -1,8 +1,7 @@
 ---
 title: "EPI 590R"
 author: "Ernest"
-format: html: 
-theme: yeti
+format: html:theme: yeti
 editor: visual
 execute: 
   eval: false

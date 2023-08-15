@@ -1,0 +1,47 @@
+---
+title: "Final Project"
+author: "Ernest Koh"
+format:
+  html:
+   theme: cayman
+execute:
+ echo: false
+ cache: true
+ warning: false
+editor: visual
+---
+
+## **Factors Associated with Survival in the Titanic Disaster**
+
+**Introduction:** On the 10th of April, 1912, the RMS Titanic set out on its maiden voyage across the Atlantic Ocean, carrying 2,223 passengers. On the 14th of April, it hit an iceberg and sank. In this analysis, we examine factors associated with the probability of survival in the Titanic disaster, including age, sex and ticket class using data available on 1309 of the passengers.
+
+```{r}
+#reading dataset
+#| echo: false
+library("readxl")
+library(tidyverse)
+library(gtsummary)
+titanic_data <- read_xlsx("C:/Users/ErnestYogi/EPI590R/final-project2/data/titanic 2023.xlsx")
+```
+**Descriptive Statistics**
+```{r}
+#| label: tbl-des
+#| tbl-cap: "Descriptive Statistics"
+tbl_summary(
+  titanic_data,
+  by = Sex,
+  include = c(Age, TicketClass, Survived))
+survived <- list(number_survival = sum(titanic_data$Survived == 1, na.rm = TRUE))
+died <- list(number_died = sum(titanic_data$Survived == 0, na.rm = TRUE))
+```
+@tbl-des shows the initial descriptive statistics of the Titanic dataset.
+
+The number of passengers who survived the titanic disaster is `r survived` and the number of passengers who died is `r died`.
+
+**Regression Analysis**
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

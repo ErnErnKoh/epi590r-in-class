@@ -43,11 +43,14 @@ tbl_summary(
   include = c(sex_cat, race_eth_cat, region_cat,
               eyesight_cat, glasses, age_bir))
 stats <- list(n = nrow(nlsy),
-              mean_sleepwkdy = mean(nlsy$sleep_wkdy,na.rm = TRUE))
+              mean_sleepwkdy = mean(nlsy$sleep_wknd, na.rm = TRUE))
+var <- list(n = ncol(nlsy))
 ```
 @tbl-des shows the intial descriptive statistics performed on the dataset.
 
 The average number of hours of sleep on weekday is `r stats$mean_sleepwkdy`.
+
+The total number of variables in the dataset is `r var`
 
 
 ```{r}
